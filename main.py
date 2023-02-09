@@ -53,16 +53,21 @@ canvas.pack()
 
 
 #########################################################################################
-import addmember, removerbook, removemember, assignbook, addbook, listmembers, listbooks, removedue
+import addmember, removerbook, removemember, assignbook, addbook, listmembers, listbooks, removedue,searchbook
 
 
-Button(top, text="Add member", background="green", foreground="white", font=("Bahnschrift","15"), command=addmember.addMember).place(x=30,y=70)
-Button(top, text="Add book", background="green", foreground="white", font=("Bahnschrift","15"), command=addbook.addBook).place(x=330,y=70)
-Button(top, text="Assign book", background="green", foreground="white", font=("Bahnschrift","15"), command=assignbook.assignBook).place(x=620,y=70)
-Button(top, text="Remove member", background="green", foreground="white", font=("Bahnschrift","15"), command=removemember.removeMember).place(x=20,y=130)
-Button(top, text="Remove book", background="green", foreground="white", font=("Bahnschrift","15"), command=removerbook.removeBook).place(x=320,y=130)
-Button(top, text="List members", background="green", foreground="white", font=("Bahnschrift","15"),command=listmembers.listMembers).place(x=920,y=70)
-Button(top, text="List books", background="green", foreground="white", font=("Bahnschrift","15"),command=listbooks.listBooks).place(x=1220,y=70)
+Button(top, text="Add member", background="black", foreground="white", font=("Bahnschrift","15"), command=addmember.addMember).place(x=20,y=80)
+Button(top, text="Remove member", background="black", foreground="white", font=("Bahnschrift","15"), command=removemember.removeMember).place(x=20,y=160)
+
+Button(top, text="Add book", background="black", foreground="white", font=("Bahnschrift","15"), command=addbook.addBook).place(x=20,y=240)
+Button(top, text="Remove book", background="black", foreground="white", font=("Bahnschrift","15"), command=removerbook.removeBook).place(x=20,y=320)
+
+Button(top, text="Assign book", background="black", foreground="white", font=("Bahnschrift","15"), command=assignbook.assignBook).place(x=20,y=400)
+
+
+Button(top, text="List members", background="black", foreground="white", font=("Bahnschrift","15"),command=listmembers.listMembers).place(x=20,y=480)
+Button(top, text="List books", background="black", foreground="white", font=("Bahnschrift","15"),command=listbooks.listBooks).place(x=20,y=560)
+Button(top, text="Search books", background="black", foreground="white", font=("Bahnschrift","15"),command=searchbook.SearchBook).place(x=20,y=640)
 
 
 top.mainloop()

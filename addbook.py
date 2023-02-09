@@ -41,7 +41,7 @@ def addBook():
 		msg.showinfo("Add book",f"Book added successfully.")
 		gtk2.destroy()
 	w = [Entry(gtk2, bd=3, font=("Bahnschrift","15")),Entry(gtk2, bd=3, font=("Bahnschrift","15"))]
-	Button(gtk2, text="Create book", font=("Bahnschrift","15"), command=addBookFunc).place(x=20,y=130)
+	Button(gtk2, text="Add book", font=("Bahnschrift","15"), command=addBookFunc).place(x=20,y=130)
 	w[0].place(x=230, y=20)
 	w[1].place(x=230, y=70)
 	gtk2.mainloop()
