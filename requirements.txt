@@ -1,3 +1,0 @@
-python
-tkinter
-sqlite3
